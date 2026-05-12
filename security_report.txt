@@ -1,0 +1,13 @@
+===== SOC LOG ANALYZER REPORT =====
+Total Failed Logins: 5
+Total Successful Logins: 3
+
+===== Suspicious IP Activity =====
+192.168.1.15 → 3 failed attempts
+192.168.1.20 → 1 failed attempts
+192.168.1.99 → 1 failed attempts
+
+Top Attacker IP: 192.168.1.15
+Failed Attempts: 3
+
+Risk Level: HIGH
