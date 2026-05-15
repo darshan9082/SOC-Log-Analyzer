@@ -79,12 +79,24 @@ sorted_ips = sorted(
 for ip, count in sorted_ips:
     print(f"{ip} → {count} requests")
 
-top_ip = sorted_ips[0][0]
+if len(sorted_ips) > 0:
 
+    top_ip = sorted_ips[0][0]
+
+    for ip, count in sorted_ips:
+        print(f"{ip} → {count} requests")
+
+else:
+    print("No IP activity found.")
 # Scanning threshold
-if ip_count[top_ip] >= 10:
-    print("\n⚠ High activity detected.")
-    print("Possible scanning activity.")
+# Scanning threshold
+if len(sorted_ips) > 0:
+
+    top_ip = sorted_ips[0][0]
+
+    if ip_count[top_ip] >= 10:
+        print("\n⚠ High activity detected.")
+        print("Possible scanning activity.")
 # Status Code Analysis
 # HTTP Status Code Names
 status_meaning = {
