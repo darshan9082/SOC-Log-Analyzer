@@ -1,0 +1,90 @@
+May 01 09:12:01 web01 systemd[1]: Started Session 421 of User www-data.
+May 01 09:12:03 web01 systemd[1]: Started Daily Cleanup of Temporary Directories.
+May 01 09:12:07 web01 CRON[42101]: (root) CMD (/usr/local/bin/backup.sh)
+May 01 09:12:15 web01 sshd[42115]: Accepted publickey for admin from 192.168.1.25 port 49210 ssh2
+May 01 09:12:17 web01 sshd[42116]: pam_unix(sshd:session): session opened for user admin(uid=1000)
+May 01 09:13:02 web01 sshd[42142]: Failed password for root from 203.0.113.45 port 51120 ssh2
+May 01 09:13:03 web01 sshd[42143]: Failed password for root from 203.0.113.45 port 51121 ssh2
+May 01 09:13:04 web01 sshd[42144]: Failed password for root from 203.0.113.45 port 51122 ssh2
+May 01 09:13:05 web01 sshd[42145]: Failed password for root from 203.0.113.45 port 51123 ssh2
+May 01 09:13:06 web01 sshd[42146]: Failed password for root from 203.0.113.45 port 51124 ssh2
+May 01 09:13:07 web01 sshd[42147]: Failed password for root from 203.0.113.45 port 51125 ssh2
+May 01 09:13:08 web01 sshd[42148]: Failed password for root from 203.0.113.45 port 51126 ssh2
+May 01 09:13:09 web01 sshd[42149]: Failed password for root from 203.0.113.45 port 51127 ssh2
+May 01 09:13:10 web01 sshd[42150]: Failed password for root from 203.0.113.45 port 51128 ssh2
+May 01 09:13:11 web01 sshd[42151]: Failed password for root from 203.0.113.45 port 51129 ssh2
+May 01 09:13:12 web01 sshd[42152]: Connection closed by authenticating user root 203.0.113.45 port 51129 [preauth]
+May 01 09:14:02 web01 sshd[42201]: Invalid user admin2 from 198.51.100.77 port 40120
+May 01 09:14:03 web01 sshd[42202]: Invalid user test from 198.51.100.77 port 40121
+May 01 09:14:04 web01 sshd[42203]: Invalid user oracle from 198.51.100.77 port 40122
+May 01 09:14:05 web01 sshd[42204]: Failed password for invalid user admin2 from 198.51.100.77 port 40123 ssh2
+May 01 09:14:06 web01 sshd[42205]: Failed password for invalid user test from 198.51.100.77 port 40124 ssh2
+May 01 09:14:07 web01 sshd[42206]: Failed password for invalid user oracle from 198.51.100.77 port 40125 ssh2
+May 01 09:14:08 web01 sshd[42207]: Failed password for root from 198.51.100.77 port 40126 ssh2
+May 01 09:14:09 web01 sshd[42208]: Failed password for root from 198.51.100.77 port 40127 ssh2
+May 01 09:14:10 web01 sshd[42209]: Failed password for root from 198.51.100.77 port 40128 ssh2
+May 01 09:14:11 web01 sshd[42210]: Failed password for root from 198.51.100.77 port 40129 ssh2
+May 01 09:14:12 web01 sshd[42211]: Failed password for root from 198.51.100.77 port 40130 ssh2
+May 01 09:15:20 web01 sshd[42301]: Accepted password for deploy from 10.10.20.15 port 44210 ssh2
+May 01 09:15:21 web01 sshd[42301]: pam_unix(sshd:session): session opened for user deploy(uid=1001)
+May 01 09:16:04 web01 sshd[42315]: Failed password for backup from 192.168.1.80 port 45210 ssh2
+May 01 09:16:05 web01 sshd[42316]: Failed password for backup from 192.168.1.80 port 45211 ssh2
+May 01 09:16:06 web01 sshd[42317]: Failed password for backup from 192.168.1.80 port 45212 ssh2
+May 01 09:16:07 web01 sshd[42318]: Accepted publickey for backup from 192.168.1.80 port 45213 ssh2
+May 01 09:17:01 web01 CRON[42401]: (root) CMD (/usr/bin/logrotate)
+May 01 09:17:02 web01 systemd[1]: Started Rotate log files.
+May 01 09:17:04 web01 systemd[1]: Finished Rotate log files.
+May 01 09:18:01 web01 postfix/smtpd[42501]: connect from mail.example.net[192.0.2.25]:54120
+May 01 09:18:02 web01 postfix/smtpd[42501]: 4A21C5E01: client=mail.example.net[192.0.2.25]
+May 01 09:18:03 web01 postfix/qmgr[42505]: 4A21C5E01: from=<alerts@example.org>, size=1842, nrcpt=1
+May 01 09:18:04 web01 postfix/smtp[42510]: 4A21C5E01: to=<admin@example.net>, relay=mail.example.net[192.0.2.25]:25, status=sent
+May 01 09:19:10 web01 named[42601]: client 192.168.1.44#53122 query: example.com IN A +E
+May 01 09:19:12 web01 named[42601]: client 192.168.1.45#53123 query: internal.example IN A +E
+May 01 09:20:01 web01 systemd[1]: Started nginx.service.
+May 01 09:20:02 web01 systemd[1]: nginx.service: Deactivated successfully.
+May 01 09:20:15 web01 nginx[42701]: 192.168.1.25 - - [01/May/2026:09:20:15 +0000] "GET / HTTP/1.1" 200 1240 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+May 01 09:20:16 web01 nginx[42701]: 192.168.1.25 - - [01/May/2026:09:20:16 +0000] "GET /login HTTP/1.1" 200 2480 "https://example.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+May 01 09:20:17 web01 nginx[42701]: 192.168.1.25 - - [01/May/2026:09:20:17 +0000] "POST /login HTTP/1.1" 302 512 "https://example.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+May 01 09:20:18 web01 nginx[42701]: 192.168.1.25 - - [01/May/2026:09:20:18 +0000] "GET /dashboard HTTP/1.1" 200 4521 "https://example.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+May 01 09:21:01 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:01 +0000] "GET /robots.txt HTTP/1.1" 200 312 "-" "Mozilla/5.0"
+May 01 09:21:02 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:02 +0000] "GET /.env HTTP/1.1" 403 162 "-" "Mozilla/5.0"
+May 01 09:21:03 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:03 +0000] "GET /.git/config HTTP/1.1" 403 162 "-" "Mozilla/5.0"
+May 01 09:21:04 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:04 +0000] "GET /wp-admin/ HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:21:05 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:05 +0000] "GET /phpmyadmin/ HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:21:06 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:06 +0000] "GET /administrator/ HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:21:07 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:07 +0000] "GET /backup/database.sql HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:21:08 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:08 +0000] "GET /config.php HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:21:09 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:09 +0000] "GET /api/users HTTP/1.1" 200 3821 "-" "Mozilla/5.0"
+May 01 09:21:10 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:10 +0000] "GET /search?q=%27%20OR%201%3D1 HTTP/1.1" 400 221 "-" "Mozilla/5.0"
+May 01 09:21:11 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:11 +0000] "GET /search?q=%3Cscript%3Ealert%281%29%3C%2Fscript%3E HTTP/1.1" 400 221 "-" "Mozilla/5.0"
+May 01 09:21:12 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:12 +0000] "GET /download?file=../../etc/passwd HTTP/1.1" 403 162 "-" "Mozilla/5.0"
+May 01 09:21:13 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:13 +0000] "GET /admin/login HTTP/1.1" 403 162 "-" "Mozilla/5.0"
+May 01 09:21:14 web01 nginx[42710]: 198.51.100.77 - - [01/May/2026:09:21:14 +0000] "GET /manager/html HTTP/1.1" 404 548 "-" "Mozilla/5.0"
+May 01 09:22:01 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:01 +0000] "GET / HTTP/1.1" 200 1240 "-" "Mozilla/5.0"
+May 01 09:22:02 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:02 +0000] "GET /about HTTP/1.1" 200 1872 "-" "Mozilla/5.0"
+May 01 09:22:03 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:03 +0000] "GET /contact HTTP/1.1" 200 1630 "-" "Mozilla/5.0"
+May 01 09:22:04 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:04 +0000] "GET /products HTTP/1.1" 200 5830 "-" "Mozilla/5.0"
+May 01 09:22:05 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:05 +0000] "GET /products?page=2 HTTP/1.1" 200 6021 "-" "Mozilla/5.0"
+May 01 09:22:06 web01 nginx[42801]: 203.0.113.90 - - [01/May/2026:09:22:06 +0000] "GET /favicon.ico HTTP/1.1" 404 548 "https://example.com/" "Mozilla/5.0"
+May 01 09:23:01 web01 kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.77 DST=192.168.1.10 PROTO=TCP SPT=42120 DPT=22
+May 01 09:23:02 web01 kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.77 DST=192.168.1.10 PROTO=TCP SPT=42121 DPT=22
+May 01 09:23:03 web01 kernel: [UFW BLOCK] IN=eth0 SRC=198.51.100.77 DST=192.168.1.10 PROTO=TCP SPT=42122 DPT=22
+May 01 09:24:01 web01 sudo: admin : TTY=pts/0 ; PWD=/var/www ; USER=root ; COMMAND=/usr/bin/systemctl status nginx
+May 01 09:24:02 web01 sudo: admin : TTY=pts/0 ; PWD=/var/www ; USER=root ; COMMAND=/usr/bin/tail /var/log/nginx/access.log
+May 01 09:25:01 web01 CRON[43001]: (www-data) CMD (/usr/bin/php /var/www/html/cron.php)
+May 01 09:25:04 web01 systemd[1]: Started Session 430 of User admin.
+May 01 09:26:11 web01 sshd[43101]: Failed password for user1 from 192.0.2.55 port 38820 ssh2
+May 01 09:26:12 web01 sshd[43102]: Failed password for user1 from 192.0.2.55 port 38821 ssh2
+May 01 09:26:13 web01 sshd[43103]: Failed password for user1 from 192.0.2.55 port 38822 ssh2
+May 01 09:26:14 web01 sshd[43104]: Failed password for user1 from 192.0.2.55 port 38823 ssh2
+May 01 09:26:15 web01 sshd[43105]: Failed password for user1 from 192.0.2.55 port 38824 ssh2
+May 01 09:26:16 web01 sshd[43106]: Failed password for user1 from 192.0.2.55 port 38825 ssh2
+May 01 09:26:17 web01 sshd[43107]: Connection closed by authenticating user user1 192.0.2.55 port 38825 [preauth]
+May 01 09:27:01 web01 systemd[1]: Started Daily apt download activities.
+May 01 09:27:03 web01 systemd[1]: Finished Daily apt download activities.
+May 01 09:28:10 web01 nginx[43201]: 203.0.113.55 - - [01/May/2026:09:28:10 +0000] "GET /api/health HTTP/1.1" 200 48 "-" "curl/8.5.0"
+May 01 09:28:11 web01 nginx[43201]: 203.0.113.55 - - [01/May/2026:09:28:11 +0000] "GET /api/status HTTP/1.1" 200 112 "-" "curl/8.5.0"
+May 01 09:29:01 web01 postfix/qmgr[43301]: 8BC221A01: from=<monitor@example.org>, size=2250, nrcpt=2
+May 01 09:29:02 web01 postfix/smtp[43302]: 8BC221A01: to=<ops@example.net>, relay=mail.example.net[192.0.2.25]:25, status=sent
+May 01 09:30:01 web01 systemd[1]: Starting Daily apt upgrade and clean activities.
+May 01 09:30:05 web01 systemd[1]: Finished Daily apt upgrade and clean activities.
